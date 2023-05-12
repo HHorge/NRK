@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Må ha node installert.
 
 Videre navigerer man i en terminal til "server"-mappen for så å kjøre kommandoen "npm i", deretter "npm start".
+
 Når serveren kjører kan man navigere til "aarets-artist"-mappen og kjøre de samme kommandoene der. 
 
 Siden skal nå åpens automatisk i nettleseren på addresse [http://localhost:3000](http://localhost:3000).
