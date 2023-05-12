@@ -1,0 +1,87 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(36, 36, 36);
+  background-image: url("https://i.imgur.com/lLPbbZ8.png");
+  background-attachment: fixed;
+  color: rgb(255, 237, 216);
+}
+
+.content,
+.voted-wrapper,
+.artists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  transform-origin: top;
+  margin-bottom: 3rem;
+}
+
+.artists {
+  gap: 8rem;
+}
+
+.small {
+  font-style: italic;
+  margin-bottom: -3rem;
+}
+
+.large {
+  font-size: 3.5rem;
+  margin-bottom: 8rem;
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  color: rgba(255, 237, 216, 0.232);
+  background: #3232322c;
+}
+
+.submit-button {
+  margin-top: 3rem;
+  font: unset;
+  color: rgb(255, 237, 216);
+  font-weight: bold;
+  transform: skew(-20deg);
+  padding: 2rem 5rem;
+  background: #152dce;
+}
+
+.artist-img {
+  margin-top: -5rem;
+  width: 40%;
+}
+
+@media (max-width: 800px) {
+  .artist-img {
+    width: 70%;
+
+  }
+
+  .content {
+    transform: scale(0.8);
+  }
+
+  .wrapper {
+    height: 1000px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .large {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    transform: scale(0.5);
+  }
+
+  .wrapper {
+    height: 1000px;
+  }
+
+}

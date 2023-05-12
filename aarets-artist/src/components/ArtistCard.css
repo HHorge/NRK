@@ -1,0 +1,73 @@
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: all .2s ease-in-out; 
+
+  & img {
+    position: absolute;
+    width: 12rem;
+    top: -5rem;
+  }
+}
+
+.card:hover{
+  transform: scale(1.01);
+}
+
+.card, .background{
+  width: 33rem;
+  height: 12rem;
+}
+
+.background {
+  position: absolute;
+  background: rgb(11,0,198);
+  background: linear-gradient(315deg, rgba(11,0,198,1) 0%, rgba(50,164,235,1) 100%);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  z-index: -1;
+}
+
+.selected {
+  border: 10px solid #ffd633;
+  box-shadow: rgba(255, 204, 39, 0.25) 0px 54px 55px, rgba(255, 207, 17, 0.12) 0px -12px 30px, rgba(255, 208, 20, 0.12) 0px 4px 6px, rgba(255, 247, 18, 0.17) 0px 12px 13px, rgba(255, 210, 29, 0.09) 0px -3px 5px;
+}
+
+
+.name {
+  font-size: 2.8rem;
+  text-shadow: rgb(6, 6, 6) 1px 0 5px;
+}
+
+.right {
+  .background {
+    transform: skew(20deg);
+  }
+
+  & h2 {
+    margin-right: 18%;
+  }
+
+  & img {
+    right: -4.5rem;
+    transform: scaleX(-1);
+  }
+}
+
+.left {
+  .background {
+    transform: skew(-20deg);
+  }
+
+  & h2 {
+    margin-left: 18%;
+  }
+
+  & img {
+    left: -4.5rem;
+  }
+}
+
+
